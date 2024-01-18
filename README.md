@@ -1,2 +1,3 @@
-# bizmoa_new
-다양한 사업자 정보, '비즈모아'로 쉽게 모아보세요. 직관적인 인터페이스로 효과적인 비즈니스 관리를 지원합니다.
+# bizmoa_fix
+
+A new Flutter project.
