@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:developer';
 
-import 'package:bizmoa_fix/component/custom_text_field.dart';
-import 'package:bizmoa_fix/constant/app_constant.dart';
-import 'package:bizmoa_fix/model/business_status.dart';
-import 'package:bizmoa_fix/screen/business_status_screen.dart';
+import 'package:bizmoa/component/custom_text_field.dart';
+import 'package:bizmoa/constant/app_constant.dart';
+import 'package:bizmoa/model/business_status.dart';
+import 'package:bizmoa/screen/business_status_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 

@@ -1,4 +1,4 @@
-import 'package:bizmoa_fix/screen/status_query_screen.dart';
+import 'package:bizmoa/screen/status_query_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      debugShowCheckedModeBanner: false,
       home: StatusQueryScreen(), // StatusQueryScreen을 홈 화면으로 설정합니다.
     );
   }

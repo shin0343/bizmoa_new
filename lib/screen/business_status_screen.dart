@@ -1,4 +1,4 @@
-import 'package:bizmoa_fix/model/business_status.dart';
+import 'package:bizmoa/model/business_status.dart';
 import 'package:flutter/material.dart';
 
 class BusinessStatusScreen extends StatelessWidget {
