@@ -1,20 +1,19 @@
+import 'package:bizmoa_fix/screen/status_query_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+    return MaterialApp(
+      title: '사업자번호 조회 앱',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
+      home: StatusQueryScreen(), // StatusQueryScreen을 홈 화면으로 설정합니다.
     );
   }
 }
