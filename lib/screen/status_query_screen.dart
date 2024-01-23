@@ -48,7 +48,7 @@ class _StatusQueryScreenState extends State<StatusQueryScreen> {
               height: 70, // 버튼의 높이를 70으로 조정
               child: ElevatedButton(
                 onPressed: () {
-                  // TODO: 상태 조회 로직 추가
+                  log("onPressed");
                   getBusinessStatusInfo();
                 },
                 style: ElevatedButton.styleFrom(
@@ -93,10 +93,12 @@ class _StatusQueryScreenState extends State<StatusQueryScreen> {
 
     // 요청 본문을 JSON 형식으로 구성
     final body = json.encode({"b_no": businessNumbers});
+    log("getBusinessStatusInfo()----0 uri:$uri, json: $body");
 
     try {
       http.Response response =
           await http.post(uri, headers: headers, body: body);
+      log("getBusinessStatusInfo()----0 response:$response");
 
       if (response.statusCode == 200) {
         log("getBusinessStatusInfo()----1 response.body: ${response.body}");
